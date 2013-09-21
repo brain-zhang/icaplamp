@@ -1,0 +1,11 @@
+Output: Simple BOM
+Type  : SimpleBOM
+From  : Project [ICAPLAMP_EVO.PRJPCB]
+   Generated File[icaplamp_evo.BOM]
+   Generated File[icaplamp_evo.CSV]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 20:17:12 On 2012-9-2

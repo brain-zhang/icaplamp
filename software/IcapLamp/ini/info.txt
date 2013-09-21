@@ -1,0 +1,4 @@
+﻿信息化矿灯在线监控系统(Demo Beta1.0)  用于演示
+memoryboxes@gmail.com
+
+程序采用了libssh2、easySqlite等多方开源库。

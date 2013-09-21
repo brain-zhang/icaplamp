@@ -1,0 +1,57 @@
+﻿MineIcapLampBase作为IcapLamp的底层类库实现。
+思路是界面和功能分离。IcapLamp作为GUI单独实现，目前采用的MFC(vs2010的MFC版本中包含控件比较丰富)自定义浮动的风格样式工程。
+MineIcapLampBase由以下部分组成。
+
+MIL_BaseObject:
+	作为所有操作的基类，封装了序列化及状态报告两个功能。
+
+MIL_Exception:
+	为工程提供异常封装，因为异常信息比较简单，没有采用类层次封装，仅仅在内部定义了用到的异常类型。
+
+MIL_Database:
+	采用soci C++数据访问库，在此基础上提供了本系统所有的数据库操作。
+	后端数据库可以采用Mysql、postgresql、sqlite或是使用ODBC访问MS SQLServer。目前测试的时候使用sqlite3，生产环境使用postgresql。
+	需要注意的是，切换数据库时，需要重新生成soci的lib文件，具体参见soci的文档。
+
+MIL_Reporter:
+	提供Log及报警功能，大部分Log是捕获MIL_Exception后过滤到MIL_Reporter处理。
+
+MIL_Communicate:
+	提供对矿灯的数据收发功能。
+
+MIL_Lamp:
+	封装了矿灯的操作。
+
+MIL_Worker:
+	封装了工人常用信息，一个MIL_Worker会持有MIL_Lamp Object。
+
+MIL_WorkersManage:
+	对一组工人进行操作，例如获取当前在井下的工人，获取在A点活动的工人等等..
+
+MIL_AllWorkersManage:
+	持有MIL_WorkersManage，生命期一直持续与整个系统，载入所有工人信息(井下活动人员、井上工作人员、人员删减、人员考勤等等)，其中的load()功能
+	用于载入所有当前工人信息，另外要考虑程序意外终止的情况。
+
+MIL_StationManage:
+	封装了基站的操作。
+	其中会启动后台线程定期扫描基站，采用观察者模式与MIL_AllWorkersManage通信，维护工人状态。
+
+采用的第三方库有:
+boost_1_42_0
+soci3.1.0
+sqlite3
+libssh2-1.4.2
+
+其中 boost及soci及sqlite3的库目录在d:\backup\vslib\
+其他库目录在f:\work\信息化矿灯\software\IcapLamp\3rdinclude\ 及 f:\work\信息化矿灯\software\IcapLamp\3rdlib\
+
+其中soci切换数据库支持时需要重新编译，编译时也要注意debug及release的区别。
+
+boost库不需单独编译，但编写代码时要打开宏开关BOOST_ALL_NO_LIB
+
+编译时线程选项为MT/MTD，注意工程和库的编译保持一致。
+
+以上类会封转大部分涉及到定位的功能，另外也会涉及少部分的考勤功能。
+报表、图形化显示部分是独立的，可以拆分出来另外设计，不会影响以上类的实现。
+
+大量采用STL及boost组件，要求你熟悉C++ 泛型编程。

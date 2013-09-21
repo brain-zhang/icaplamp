@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="easySQLite">
+      <UniqueIdentifier>{2b1a45ea-5cef-46a3-b379-95f0f3e70bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="customUtil">
+      <UniqueIdentifier>{d0393478-97b2-4ccd-9e66-23a4ab0f159e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libssh2">
+      <UniqueIdentifier>{2499f34f-eb38-4a88-b386-6ab684fe92e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\nav_large.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\nav_large_hc.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\pages.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\pages_hc.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\pages_small.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\pages_small_hc.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="UserImages.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\IcapLamp.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\IcapLampDoc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\IcapLamp.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\shortcuts.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="easySQLite\_AUTHOR.TXT">
+      <Filter>easySQLite</Filter>
+    </None>
+    <None Include="easySQLite\_LICENSE.TXT">
+      <Filter>easySQLite</Filter>
+    </None>
+    <None Include="easySQLite\_ReadMe_zh.html">
+      <Filter>easySQLite</Filter>
+    </None>
+    <None Include="easySQLite\_VERSION.TXT">
+      <Filter>easySQLite</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IcapLamp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CalendarBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SendMessageFormView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="easySQLite\SHA1.h">
+      <Filter>easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="easySQLite\SqlCommon.h">
+      <Filter>easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="easySQLite\SqlDatabase.h">
+      <Filter>easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="easySQLite\SqlField.h">
+      <Filter>easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="easySQLite\SqlFieldSet.h">
+      <Filter>easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="easySQLite\sqlite3.h">
+      <Filter>easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="easySQLite\SqlRecord.h">
+      <Filter>easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="easySQLite\SqlRecordSet.h">
+      <Filter>easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="easySQLite\SqlTable.h">
+      <Filter>easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="easySQLite\SqlValue.h">
+      <Filter>easySQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomUtil\Model.h">
+      <Filter>customUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomUtil\NetUtil.h">
+      <Filter>customUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="SendMessageThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SockSendMessage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomUtil\Singleton.h">
+      <Filter>customUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionMonitorDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SetupFormView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckOnFormView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionMonitorFormView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomUtil\Util.h">
+      <Filter>customUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="Easyssh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanAPThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libssh2\libssh2.h">
+      <Filter>libssh2</Filter>
+    </ClInclude>
+    <ClInclude Include="libssh2\libssh2_config.h">
+      <Filter>libssh2</Filter>
+    </ClInclude>
+    <ClInclude Include="libssh2\libssh2_publickey.h">
+      <Filter>libssh2</Filter>
+    </ClInclude>
+    <ClInclude Include="libssh2\libssh2_sftp.h">
+      <Filter>libssh2</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkerSearchFormView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IcapLamp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CalendarBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SendMessageFormView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="easySQLite\SHA1.cpp">
+      <Filter>easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="easySQLite\SqlCommon.cpp">
+      <Filter>easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="easySQLite\SqlDatabase.cpp">
+      <Filter>easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="easySQLite\SqlField.cpp">
+      <Filter>easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="easySQLite\SqlFieldSet.cpp">
+      <Filter>easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="easySQLite\sqlite3.c">
+      <Filter>easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="easySQLite\SqlRecord.cpp">
+      <Filter>easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="easySQLite\SqlRecordSet.cpp">
+      <Filter>easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="easySQLite\SqlTable.cpp">
+      <Filter>easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="easySQLite\SqlValue.cpp">
+      <Filter>easySQLite</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomUtil\Model.cpp">
+      <Filter>customUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomUtil\NetUtil.cpp">
+      <Filter>customUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="SendMessageThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SockSendMessage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomUtil\Singleton.cpp">
+      <Filter>customUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionMonitorDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SetupFormView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckOnFormView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionMonitorFormView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomUtil\Util.cpp">
+      <Filter>customUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="Easyssh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanAPThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkerSearchFormView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IcapLamp.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

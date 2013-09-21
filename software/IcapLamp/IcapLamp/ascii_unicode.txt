@@ -1,0 +1,95 @@
+char是C语言标准数据类型，字符型，至于由几个字节组成通常由编译器决定，一般一个字节。Windows为了消除各编译器的差别，重新定义了一些数据类型，CHAR,TCHAR,LPSTR,LPCSTR几个类型都是这样。CHAR为单字节字符。还有个WCHAR为Unicode字符，即不论中英文，每个字有两个字节组成。如果当前编译方式为ANSI(默认)方式，TCHAR等价于CHAR，如果为Unicode方式，TCHAR等价于WCHAR。在当前版本LPCSTR和LPSTR没区别，即以零结尾的字符串指针，相当于CHAR *。 LPSTR、LPCSTR相当于char *，所以这种类型变量的赋值等同于char *的赋值。
+
+Ex1: LPSTR lpstrMsg = "I'm tired.";
+Ex2: char strMsg[]="I'm tired.";
+LPSTR lpstrMsg = (LPSTR) strMsg;
+
+unsigned short * 和 char* : 一个是宽字符，一个是多字节，两种编码是不一样的。
+
+如果你的程序要想在全球发布，一定要使用宽字符Unicode，不然在别的操作系统上，多字节字符，比如中文，会显示成乱码。      
+    
+Unicode把所有的字，各国语言的文字全部统一编码了，而多字节则是有码表区分的，我国是GB_2312，台湾是Big5.
+
+TChar strFileName[MAX_PATH] = TEXT("");
+char strFileName[MAX_PATH]="";
+
+这两种定义在使用上有何不同?
+
+TEXT就是L
+有点象这样：
+#define TEXT(str)   L##str
+##是连接的意思就是将L和str联在一起了，表示宽字符。
+l"Hello World",和"Hello World"是不同的，前一个占用24个char,后一个占用了12个char
+如果定义了
+#define UNICODE
+TCHAR就代表宽字符wchar（2*sizeof(char)）,否则TCHAR就代表char
+
+也就是说在有
+#define UNICODE
+的情况下
+
+TChar strFileName[MAX_PATH] = TEXT(""); //代表定义了一个空的宽字符串
+char strFileName[MAX_PATH]="";//代表定义了一个ASCII字符串
+
+如果没有定义#define UNICODE那么
+TChar strFileName[MAX_PATH] = TEXT(""); //编译器似乎会报错，没尝试过
+char strFileName[MAX_PATH]="";//代表定义了一个ASCII字符串
+
+int len=0;
+char *temp;
+strcpy(temp,"hello");
+len=strlen(temp);
+
+char *unicodechar; //不一定是char*型，应该是什么型
+int unicodelen;
+
+//如何把temp=>unicodechar，并且长度为unicodechar的byte长度
+比如
+temp="a" len=1
+unicodechar=0x000x61 unicodelen=2;
+
+将ANSI转换到Unicode
+(1)通过L这个宏来实现，例如: CLSIDFromProgID( L"MAPI.Folder",&clsid);
+(2)通过MultiByteToWideChar函数实现转换,例如:
+char *szProgID = "MAPI.Folder";
+WCHAR szWideProgID[128];
+CLSID clsid;
+long lLen = MultiByteToWideChar(CP_ACP,0,szProgID,strlen(szProgID),szWideProgID,sizeof(szWideProgID));
+szWideProgID[lLen] = '\0';
+(3)通过A2W宏来实现,例如:
+USES_CONVERSION;
+CLSIDFromProgID( A2W(szProgID),&clsid);
+char to TCHAR , TCHAR to char在编写Wince程序时，遇到了一个问题如下：有的函数的返回值是char型的，如何将其转换成Tchar型，比如列举注册表函数RegEnumValue()返回的值中，有一个返回值是得到指定键的值。它是BYTE（unsigned char）型的，如何将其很容易的转成Tchar型，用了函数MultiByteToWideChar()，但是总是只转第一个字符，不知道哪里出了问题？
+
+答：可以把BYTE的值赋给CString变量，再用wcscpy函数把CString变量的值赋给TCHAR数组。
+ANSI to Unicode:
+--------------------------------------------------
+char *pAnsiString = "Some test string";
+CString strUnicode = pAnsiString;
+---------------------------------------------------如何把 char 转为lpctstr
+mbstowcs---Convert a multi-byte(ANSI) string to wide character stirng(Unicode).
+wcstombs---Convert a wide character string to multi-byte string.--------------------------------------------------cstring TCHAR的互相转换
+cstring－>TCHAR*的转化可以用函数GetBuff()函数原型为：LPTSTR GetBuffer( int nMinBufLength );
+cstring str("cstring");
+TCHAR* szMsg = new TCHAR[100];
+//其参数为cstring字符串的长度
+szMsg = str.GetBuffer(str.GetLength());
+str.ReleaseBuffer();
+delete []szMsg;
+szMsg = NULL;TCHAR*－>cstring的转化TCHAR szTchar[18] = L"TCHAR";  
+cstring str;  
+str.Format(_T("%s"),szTchar);
+-------------------------------------------------------------
+
+Unicode to ANSI:
+
+char* GetAnsiString(const CString &s)
+{
+int nSize = s.GetLength();
+char *pAnsiString = new char[nSize+1];
+wcstombs(pAnsiString, s, nSize+1);
+return pAnsiString;
+}
+
+CString strUnicode = _T("Some test string");
+char *pAnsiString = GetAnsiString(strUnicode); 

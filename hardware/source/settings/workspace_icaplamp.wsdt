@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>icaplamp/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>135</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>915</ColumnWidth1><ColumnWidth2>244</ColumnWidth2><ColumnWidth3>61</ColumnWidth3></Build>
+    <TerminalIO/></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-14172-26455</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>icaplamp</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-4909-29290</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\key.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>438</SelStart><SelEnd>438</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\com.c</Filename><XPos>0</XPos><YPos>86</YPos><SelStart>2913</SelStart><SelEnd>2913</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\msg.c</Filename><XPos>0</XPos><YPos>158</YPos><SelStart>4880</SelStart><SelEnd>4880</SelEnd></Tab><ActiveTab>2</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\msg.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>313</SelStart><SelEnd>313</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\hardware.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>532</SelStart><SelEnd>532</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\lcd.c</Filename><XPos>0</XPos><YPos>32</YPos><SelStart>1009</SelStart><SelEnd>1009</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\flash.h</Filename><XPos>0</XPos><YPos>66</YPos><SelStart>1900</SelStart><SelEnd>1918</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\flash.c</Filename><XPos>0</XPos><YPos>108</YPos><SelStart>3864</SelStart><SelEnd>3864</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\crc.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>76</SelStart><SelEnd>76</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\work\&#x4Fe1;&#x606F;&#x5316;&#x77FF;&#x706F;\hardware\source\crc.c</Filename><XPos>0</XPos><YPos>36</YPos><SelStart>2024</SelStart><SelEnd>2024</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\work\&#x4Fe1;&#x606F;&#x5316;&#x77FF;&#x706F;\hardware\source\signal.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>247</SelStart><SelEnd>247</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\work\&#x4Fe1;&#x606F;&#x5316;&#x77FF;&#x706F;\hardware\source\spark.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>115</SelStart><SelEnd>125</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>F:\work\&#x4Fe1;&#x606F;&#x5316;&#x77FF;&#x706F;\hardware\source\spark.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>205</SelStart><SelEnd>205</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\wifi.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>23</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>23</YPos><SelStart>483</SelStart><SelEnd>483</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01378b78><key>iaridepm.enu1</key></Toolbar-01378b78></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>561</Bottom><Right>209</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>156250</sizeHorzCX><sizeHorzCY>276243</sizeHorzCY><sizeVertCX>164844</sizeVertCX><sizeVertCY>777624</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>118</Bottom><Right>1282</Right><x>-2</x><y>-2</y><xscreen>1284</xscreen><yscreen>120</yscreen><sizeHorzCX>1003125</sizeHorzCX><sizeHorzCY>165746</sizeHorzCY><sizeVertCX>156250</sizeVertCX><sizeVertCY>276243</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
